@@ -113,6 +113,8 @@ def datingClassTest():
     hoRatio = 0.10
     datingDataMat, datingLabels = file2matrix("datingTestSet2.txt")
     normMat, ranges, minVals = autoNorm(datingDataMat)
+
+    # shape 都是 NumPy 的函数
     m = normMat.shape[0]
     numTestVecs = int(m*hoRatio)
     errorCount = 0.0
