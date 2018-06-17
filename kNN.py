@@ -180,7 +180,7 @@ y = datingDataMat[:,1]
 
 底下 area 定义中须知：
 1 给某一分类加上系数，使得其分类特性更加清晰。此情景是依据某一分类权重值大小，来决定半径大小，从而提高辨识度
-2 使用 [ int(x) for x in List[L] ] 来给列表 List[L]中的每一个元素重新赋值
+2 使用 [ int(x) for x in List[L] ] 来给列表 List[L]中的每一个元素重新赋值, 重新生成一个列表
 
 """
 area =  [ (int(number_string)*3)**2 for number_string in datingLabels ]
